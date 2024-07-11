@@ -93,7 +93,7 @@
     </div>
   </header><!-- End Header -->
   <div>
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+   
 <div class="elfsight-app-d1a4f5cc-219a-4163-829d-c1ce1d56b047"></div>
   </div>
 
@@ -384,7 +384,7 @@
           <div class="col-md-4 col-sm-4 col-xs-12 portfolio-item filter-installation">
             <div class="single-awesome-project">
               <div class="awesome-img">
-                <img src="assets/img/ktkimg/installation1.jpeg" alt="" />
+                <img src="assets/img/ktkimg/installation1.jpg" alt="" />
                 <!-- <a href="#"><img src="assets/img/ktkimg/installation1.jpeg" alt="" /></a>
                 <div class="add-actions text-center">
                   <div class="project-dec">
@@ -622,14 +622,15 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" style="color: #800080;">
             <!-- Start contact icon column -->
             <div class="col-md-4">
               <div class="contact-icon text-center">
                 <div class="single-icon">
-                  <i class="bi bi-phone"></i>
+                  <i  class="bi bi-phone"></i>
                   <p>
-                    Call: +97477112297, +97470044051 <br>
+                    Call:  <a href="tel:+97431696569">+97431696569</a>, 
+                    <a href="tel:+97470044051">+97470044051</a> <br>
                     <span>Sunday-thursday (9am-5pm)</span>
                   </p>
                 </div>
@@ -641,8 +642,9 @@
                 <div class="single-icon">
                   <i class="bi bi-envelope"></i>
                   <p>
-                    Email: info@ktkinternational.com<br>
-                    <span>Web: www.ktkinternational.com</span>
+                    <a href="mailto:info@ktkinternational.com">info@ktkinternational.com</a><br>
+                    <span>Web: </span>
+                    <a href="http://www.ktkinternational.com" target="_blank" rel="noopener noreferrer">www.ktkinternational.com</a>
                   </p>
                 </div>
               </div>
@@ -653,8 +655,11 @@
                 <div class="single-icon">
                   <i class="bi bi-geo-alt"></i>
                   <p>
-                    Location: Doha<br>
-                    <span>Qatar</span>
+                    Location: 
+                    <a href="https://www.google.com/maps?q=Doha,+Qatar" target="_blank" rel="noopener noreferrer">
+                      Doha<br>
+                      <span>Qatar</span>
+                    </a>
                   </p>
                 </div>
               </div>
@@ -666,7 +671,42 @@
     </div><!-- End Contact Section -->
 
   </main><!-- End #main -->
-
+  <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?36525';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#800080",
+      "ctaText":"",
+      "borderRadius":"40",
+      "marginLeft":"0",
+      "marginBottom":"60",
+      "marginRight":"60",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"KTK International",
+      "brandSubTitle":"Typically replies within a hour",
+      "brandImg":"assets/img/ktkimg/icon.jpg",
+      "welcomeText":"Hi there!\n\n\nHow can I help you?",
+      "messageText":"",
+      "backgroundColor":"#800080",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"97431696569"
+  }
+  };
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  </script>
   <!-- ======= Footer ======= -->
   <footer>
     <div class="footer-area">
@@ -708,8 +748,15 @@
                   ktkinternational is a trading and service company based in Doha,Qatar. 
                 </p>
                 <div class="footer-contacts">
-                  <p><span>Tel:</span> +97477112297, +97470044051</p>
-                  <p><span>Email:</span> info@ktkinternational.com</p>
+                  <p>
+                    <span>Tel:</span> 
+                    <a href="tel:+97431696569">+97431696569</a>, 
+                    <a href="tel:+97470044051">+97470044051</a>
+                  </p>
+                  <p>
+                    <span>Email:</span> 
+                    <a href="mailto:info@ktkinternational.com">info@ktkinternational.com</a>
+                  </p>
                   <p><span>Working Hours:</span> 9am-5pm</p>
                 </div>
               </div>
